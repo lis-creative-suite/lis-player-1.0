@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/lis-creative-suite/lis-1.0/releases/latest"><img src="https://img.shields.io/badge/Windows-LIS_PLAYER_1.0-E6C07A?style=for-the-badge&logo=windows&logoColor=0B0C0F&labelColor=0B0C0F" alt="Скачать LIS PLAYER 1.0" height="48"></a>
+  <a href="https://github.com/lis-creative-suite/lis-player-1.0/releases/latest"><img src="https://img.shields.io/badge/Windows-LIS_PLAYER_1.0-E6C07A?style=for-the-badge&logo=windows&logoColor=0B0C0F&labelColor=0B0C0F" alt="Скачать LIS PLAYER 1.0" height="48"></a>
 </p>
 
 <p align="center">
@@ -18,10 +18,10 @@
   ·
   <a href="#полная-инструкция">Инструкция</a>
   ·
-  <a href="https://github.com/lis-creative-suite/lis-1.0.n">LIS PLAYER 1.0.N</a>
+  <a href="https://github.com/lis-creative-suite/lis-player-1.0.n">LIS PLAYER 1.0.N</a>
 </p>
 
-Это первая публичная линейка **1.0**. Рядом — отдельное издание [1.0.N](https://github.com/lis-creative-suite/lis-1.0.n) (N — нейро). Два установщика, два ярлыка. Этот файл нейро не включает.
+Это первая публичная линейка **1.0**. Рядом — отдельное издание [1.0.N](https://github.com/lis-creative-suite/lis-player-1.0.n) (N — нейро). Два установщика, два ярлыка. Этот файл нейро не включает.
 
 ---
 
