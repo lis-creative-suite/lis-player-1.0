@@ -1,46 +1,21 @@
-# LIS PLAYER 1.0
+# LIS PLAYER
 
 <p align="center">
-  <img src="docs/logo.png" alt="LIS PLAYER" width="128">
+  <img src="docs/logo.png" alt="LIS PLAYER" width="160">
 </p>
 
 <p align="center">
-  <strong>Проигрыватель.</strong><br>
-  Аудио, видео, картинки и документы с вашего диска — в одном окне.
+  <a href="https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-Setup-1.0.1.exe"><img src="https://img.shields.io/badge/Windows-1.0.1-E6C07A?style=for-the-badge&logo=windows&logoColor=0B0C0F&labelColor=16181e" alt="Windows 1.0.1" height="48"></a>
+  &nbsp;
+  <a href="https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-1.0.1.apk"><img src="https://img.shields.io/badge/Android-1.0.1-E6C07A?style=for-the-badge&logo=android&logoColor=0B0C0F&labelColor=16181e" alt="Android 1.0.1" height="48"></a>
+  &nbsp;
+  <a href="docs/ИНСТРУКЦИЯ.md"><img src="https://img.shields.io/badge/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-1.0.1-0B0C0F?style=for-the-badge&labelColor=E6C07A" alt="Инструкция" height="48"></a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/lis-creative-suite/lis-player-1.0/releases/latest"><img src="https://img.shields.io/badge/Windows-LIS_PLAYER_1.0-E6C07A?style=for-the-badge&logo=windows&logoColor=0B0C0F&labelColor=0B0C0F" alt="Скачать LIS PLAYER 1.0" height="48"></a>
-</p>
+## Версии
 
-Текущая версия 1.0.1. Есть приложение для Android.
+| Версия | Windows | Android |
+| --- | --- | --- |
+| 1.0.1 | [Установить](https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-Setup-1.0.1.exe) | [Установить](https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-1.0.1.apk) |
 
-Файлы остаются на диске. Программа не отправляет их в сеть.
-
-## Скачать
-
-Текущий выпуск: **1.0.1**.
-
-Windows: `LIS-PLAYER-Setup-1.0.1.exe`. Android 10 и новее: `LIS-PLAYER-1.0.1.apk` — музыка, видео, фото и PDF; полки медиатеки те же, что на компьютере. На телефоне нужно разрешить установку из этого источника.
-
-Если программа уже стоит, обновление придёт меткой при следующем запуске. Окно можно не закрывать: **Обновить** ставит новую версию, **Не сейчас** оставляет всё как есть. Медиатека и файлы не удаляются.
-
-Windows может показать «Защитила компьютер» у скачанного файла. Это не сбой установки: «Подробнее», затем «Выполнить в любом случае».
-
-## Установка
-
-Четыре галочки форматов: аудио, видео, картинки, документы. Отмеченные форматы открываются в LIS PLAYER по умолчанию. Снятую галочку позже можно включить в настройках, «Назначить ассоциации».
-
-Нейро — бета, галочка выключена и ничего не скачивает. Подключение Гермеса, локальной модели или простой модели делается потом, отдельными кнопками в настройках.
-
-## Окно
-
-Файл открывается сразу. Песня с холодного запуска — узкая полоса. Видео, картинка и документ — большое окно. У каждого вида запоминается своё окно.
-
-<p align="center">
-  <img src="docs/screenshots/01-klassicheskiy-rezhim.png" alt="Окно LIS PLAYER" width="860">
-</p>
-
-## Инструкция
-
-Полный текст: [инструкция LIS PLAYER 1.0](docs/ИНСТРУКЦИЯ.md)
+[Все выпуски](https://github.com/lis-creative-suite/lis-player-1.0/releases) · [Портал](https://lis-creative-suite.github.io/lis-player-1.0/) · [Инструкция](docs/ИНСТРУКЦИЯ.md)
