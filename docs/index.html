@@ -119,10 +119,14 @@
     }];
 
     function labelOf(name) {
-      const lower = name.toLowerCase();
-      if (lower.endsWith(".apk")) return "Android";
+      const lower = String(name || "").toLowerCase();
       if (lower.endsWith(".exe")) return "Windows";
+      if (lower.endsWith(".apk")) return "Android";
       return "";
+    }
+
+    function versionOf(release) {
+      return String(release.tag_name || release.tag || release.name || "").replace(/^v/i, "");
     }
 
     function button(text, href) {
@@ -137,7 +141,7 @@
       const tr = document.createElement("tr");
       const ver = document.createElement("td");
       ver.className = "ver";
-      ver.textContent = release.name || release.tag;
+      ver.textContent = versionOf(release);
       if (current) {
         const mark = document.createElement("span");
         mark.className = "now";
@@ -145,7 +149,10 @@
         ver.append(mark);
       }
       const install = document.createElement("td");
-      (release.assets || []).forEach((asset) => {
+      (release.assets || [])
+        .slice()
+        .sort((a, b) => labelOf(a.name).localeCompare(labelOf(b.name)) * -1)
+        .forEach((asset) => {
         const label = labelOf(asset.name || "");
         if (label) install.append(button(label, asset.browser_download_url));
       });
