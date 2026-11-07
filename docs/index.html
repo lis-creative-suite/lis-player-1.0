@@ -11,28 +11,18 @@
       --card: #16181e;
       --gold: #e6c07a;
       --ink: #f4f1ea;
-      --mute: rgba(244, 241, 234, 0.55);
+      --mute: rgba(244, 241, 234, 0.62);
       --line: rgba(244, 241, 234, 0.12);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      min-height: 100vh;
       background: var(--bg);
       color: var(--ink);
-      font: 16px/1.4 system-ui, "Segoe UI", sans-serif;
+      font: 17px/1.5 system-ui, "Segoe UI", sans-serif;
     }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 20px 64px;
-    }
-    .logo {
-      display: block;
-      width: 128px;
-      height: 128px;
-      margin: 0 auto 12px;
-    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    .logo { display: block; width: 112px; height: 112px; margin: 0 auto 8px; }
     h1 {
       margin: 0;
       text-align: center;
@@ -40,142 +30,70 @@
       letter-spacing: 0.14em;
       font-weight: 600;
     }
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      margin: 18px 0 36px;
-    }
-    .links a { color: var(--gold); }
-    h2 {
-      margin: 0 0 12px;
-      font-size: 13px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--mute);
-      font-weight: 600;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 14px 12px;
-      text-align: left;
-      border-bottom: 1px solid var(--line);
-    }
-    th {
-      color: var(--mute);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .ver { font-variant-numeric: tabular-nums; }
-    .now {
-      margin-left: 8px;
-      color: var(--gold);
-      font-size: 11px;
-      letter-spacing: 0.08em;
-    }
+    .lead { margin: 12px 0 0; text-align: center; color: var(--mute); }
+    .downloads { display: flex; justify-content: center; gap: 12px; margin: 22px 0 36px; flex-wrap: wrap; }
     .btn {
       display: inline-block;
-      margin: 0 8px 0 0;
-      padding: 7px 14px;
+      padding: 8px 16px;
       border: 1px solid var(--gold);
       border-radius: 999px;
       color: var(--gold);
       text-decoration: none;
-      font-size: 14px;
     }
     .btn:hover { background: rgba(230, 192, 122, 0.12); }
-    .empty { color: var(--mute); }
+    h2 { margin: 28px 0 8px; font-size: 18px; font-weight: 600; }
+    p { margin: 0 0 10px; }
+    ul { margin: 0 0 10px; padding-left: 1.2em; }
+    li { margin: 4px 0; }
+    code {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.92em;
+      color: var(--gold);
+    }
+    .card {
+      margin-top: 8px;
+      padding: 14px 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
   <main>
     <img class="logo" src="logo.png" alt="" />
     <h1>LIS PLAYER</h1>
-    <p class="links">
-      <a href="https://github.com/lis-creative-suite/lis-player-1.0/blob/main/docs/%D0%98%D0%9D%D0%A1%D0%A2%D0%A0%D0%A3%D0%9A%D0%A6%D0%98%D0%AF.md">Инструкция</a>
-      <a href="https://github.com/lis-creative-suite/lis-player-1.0/releases">Все выпуски</a>
+    <p class="lead">Один плеер. Файлы остаются на этом компьютере.</p>
+    <p class="downloads">
+      <a class="btn" href="https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-Setup-1.0.1.exe">Windows</a>
+      <a class="btn" href="https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-1.0.1.apk">Android</a>
     </p>
-    <h2>Версии</h2>
-    <table>
-      <thead>
-        <tr><th>Версия</th><th>Установить</th></tr>
-      </thead>
-      <tbody id="versions"></tbody>
-    </table>
+
+    <h2>Установка</h2>
+    <p>Windows ставится для текущего пользователя. Если система пишет «Защитила компьютер», откройте «Подробнее» и «Выполнить в любом случае». Уже установленную копию можно обновить на месте: библиотека при этом не удаляется.</p>
+    <p>Телефон — один APK, Android 10 и новее. В нём аудио, видео, фото и документы. Музыка играет с выключенным экраном.</p>
+    <p>На компьютере LIS PLAYER открывает аудио, видео и картинки. Документы открывает LIS_DOC, если он установлен отдельно.</p>
+
+    <h2>Воспроизведение</h2>
+    <p>Двойной щелчок по файлу открывает его в плеере. Песня с холодного запуска — узкая полоса внизу. Видео и картинка — большое окно.</p>
+    <div class="card">
+      <ul>
+        <li>Пробел — пуск и пауза.</li>
+        <li>Стрелки влево и вправо — предыдущий и следующий.</li>
+        <li>Вверх и вниз — громкость.</li>
+        <li><code>F</code> — кинозал.</li>
+        <li>Esc прячет плеер в трей, Shift+Esc возвращает его.</li>
+      </ul>
+    </div>
+
+    <h2>Библиотека</h2>
+    <p>Папка <code>Документы\LIS_Player_Library</code>. Полки по формату: <code>Audio</code>, <code>Video</code>, <code>Images</code>. Скриншоты лежат в <code>Images\Screenshots</code>.</p>
+    <p><strong>Разложить</strong> переносит файлы внутри библиотеки. Сначала полка по формату, затем папка с тем же именем, из которой файл пришёл. Файл с рабочего стола или из загрузок попадает в папку месяца, например <code>2026-11</code>. Скриншоты собираются в <code>Images\Screenshots</code>. Папка <code>Creative Suite</code> не перекладывается.</p>
+    <p><strong>Формат</strong> и <strong>Папка</strong> только меняют порядок показа. Файлы на диске от этого не двигаются. Повторное нажатие возвращает порядок по имени.</p>
+    <p>Отправка в библиотеку по умолчанию копирует файл. Перманентный режим в настройках переносит его. Удержание кнопки библиотеки две секунды раскладывает текущий файл или папку по тем же правилам.</p>
+
+    <h2>Обновление</h2>
+    <p>Если вышла новая версия, в шапке появляется метка. <strong>Обновить</strong> ставит её и не стирает библиотеку. <strong>Не сейчас</strong> скрывает эту версию.</p>
   </main>
-  <script>
-    const FALLBACK = [{
-      tag: "v1.0.1",
-      name: "1.0.1",
-      assets: [
-        { name: "LIS-PLAYER-Setup-1.0.1.exe", browser_download_url: "https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-Setup-1.0.1.exe" },
-        { name: "LIS-PLAYER-1.0.1.apk", browser_download_url: "https://github.com/lis-creative-suite/lis-player-1.0/releases/download/v1.0.1/LIS-PLAYER-1.0.1.apk" },
-      ],
-    }];
-
-    function labelOf(name) {
-      const lower = String(name || "").toLowerCase();
-      if (lower.endsWith(".exe")) return "Windows";
-      if (lower.endsWith(".apk")) return "Android";
-      return "";
-    }
-
-    function versionOf(release) {
-      return String(release.tag_name || release.tag || release.name || "").replace(/^v/i, "");
-    }
-
-    function button(text, href) {
-      const a = document.createElement("a");
-      a.className = "btn";
-      a.href = href;
-      a.textContent = text;
-      return a;
-    }
-
-    function rowOf(release, current) {
-      const tr = document.createElement("tr");
-      const ver = document.createElement("td");
-      ver.className = "ver";
-      ver.textContent = versionOf(release);
-      if (current) {
-        const mark = document.createElement("span");
-        mark.className = "now";
-        mark.textContent = "текущая";
-        ver.append(mark);
-      }
-      const install = document.createElement("td");
-      (release.assets || [])
-        .slice()
-        .sort((a, b) => labelOf(a.name).localeCompare(labelOf(b.name)) * -1)
-        .forEach((asset) => {
-        const label = labelOf(asset.name || "");
-        if (label) install.append(button(label, asset.browser_download_url));
-      });
-      if (!install.childElementCount) {
-        const none = document.createElement("span");
-        none.className = "empty";
-        none.textContent = "—";
-        install.append(none);
-      }
-      tr.append(ver, install);
-      return tr;
-    }
-
-    function show(list) {
-      const body = document.getElementById("versions");
-      body.replaceChildren();
-      list.forEach((release, index) => body.append(rowOf(release, index === 0)));
-    }
-
-    fetch("https://api.github.com/repos/lis-creative-suite/lis-player-1.0/releases")
-      .then((res) => (res.ok ? res.json() : Promise.reject()))
-      .then((list) => show(Array.isArray(list) && list.length ? list : FALLBACK))
-      .catch(() => show(FALLBACK));
-  </script>
 </body>
 </html>
